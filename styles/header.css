@@ -20,11 +20,6 @@
     align-items: center;
 }
 
-.container__link {
-    padding: 0.5em;
-    margin: 0.5em;
-}
-
 .container__imagem {
     padding: 1em;
 }
@@ -177,6 +172,8 @@
         text-decoration: none;
         color: var(--preto);
         font-size: 1.25rem;
+        padding: 0.5em;
+        margin: 0.5em;
     }
     
     .container__imagem {
