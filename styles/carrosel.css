@@ -1,0 +1,237 @@
+/* .carrosel {
+
+} */
+
+.carrosel__titulo {
+    color: var(--laranja);
+    background-color: var(--branco);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.125rem;
+    padding: 1em 0 0.5em 0;
+}
+
+.swiper-slide img {
+    width: 100%;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    display: none;
+}
+
+.swiper-pagination {
+    position: initial;
+    margin: 0.5em 0;
+}
+
+.card {
+    background: var(--branco);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin: 1.25em;
+    padding: 1em;
+}
+
+.card__descrição {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5em;
+}
+
+/* .descrição {
+
+} */
+
+.descrição__titulo {
+    color: var(--laranja);
+    font-weight: 700;
+    font-size: 0.875rem;
+    line-height: 1.5em;
+}
+
+.descrição__titulo-livro {
+    color: var(--azul-escuro);
+    font-weight: 700;
+    margin: 0.5em 0;
+    line-height: 1.5em;
+}
+
+.descrição__texto {
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1.5em;
+    margin-right: 0.45em;
+}
+
+.descrição__texto__carrosel2 {
+    margin-right: 1.75em;
+}
+
+.descrição__imagem {
+    width: 10.125em;    
+    height: 10.5em;
+}
+
+.card__botões {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+    align-items: center;
+}
+
+.botões {
+    display: flex;
+}
+
+.botões__item {
+    margin: 0 0.5em;
+}
+
+.botões__ancora {
+    background-color: var(--laranja);
+    padding: 1em 2.2em;
+    color: var(--branco);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* Tablet */
+@media screen and (min-width: 1024px) {
+    .carrosel__titulo {
+        font-size: 1.625rem;
+        padding: 2em 0 1em 0;
+    }
+
+    .swiper-wrapper {
+        text-align: center;
+    }
+
+    .swiper-slide img {
+        width: 70%;
+    }
+
+    .swiper-button-prev, .swiper-button-next {
+        display: flex;
+        top: 62%;
+        background: var(--azul-degrade);
+        color: var(--branco);
+        padding: 24px;
+        border-radius: 100%;        
+        width: 0;
+        height: 0px;
+        font-family: var(--font-pricipal);
+        font-size: 22px;
+        font-weight: 300;
+    }
+
+    .swiper-button-prev {
+        right: 50%;
+    }
+
+    .swiper-button-next:after, 
+    .swiper-rtl, .swiper-button-prev:after {
+        content: none;
+        width: 0;
+        height: 0;
+        margin-top: 0;
+    }
+
+    .swiper-pagination {
+        margin: 1.5em 0 4em 0;
+    }
+
+    .swiper {
+        width: 80%;
+    }
+
+    .card {
+        width: 55%;
+        margin: 3em auto;
+    }
+
+    .descrição__titulo {
+        font-size: 1rem;
+    }
+
+    .descrição__titulo-livro {
+        font-size: 1.125rem;
+    }
+
+    .descrição__texto {
+        font-size: 1rem;
+        line-height: 1.5em;
+        margin-right: 5%;
+    }
+}
+
+/* Notebook */
+@media screen and (min-width: 1360px) {
+    .swiper-pagination {
+        margin: 2em 0 2.5em 0;
+    }
+    
+    .card {
+        width: 50%;
+        margin: 4em auto;
+    }
+    
+    .descrição__titulo {
+        font-size: 1.25rem;
+    }
+
+    .descrição__titulo-livro {
+        font-size: 1.5rem;
+    }
+
+    .descrição__texto {
+        margin-right: 10em;
+    }
+
+    .botões__item {
+        margin: 0 0.75em;
+    }
+
+    .botões__item:hover {
+        cursor: pointer;
+    }
+
+    .botões__ancora:hover {
+        background-color: var(--hover-laranja-claro);
+    } 
+}
+
+/* Desktop */
+@media screen and (min-width: 1728px) {
+    .carrosel__titulo {
+        font-size: 2rem;
+        padding: 1.5em 0 0.75em 0;
+    }
+    
+    .carrosel__container {
+        display: flex;
+        margin: 0 10vw 3em 10vw;
+        align-items: center;
+        gap: 4%;
+    }
+
+    .swiper-pagination {
+        margin: 1em 0 2em 0;
+    }
+
+    .swiper {
+        width: 75%;
+    }
+
+    .card {
+        margin: 5em 0 2em 0;
+    }
+
+    .descrição__titulo {
+        font-size: 2rem;
+    }
+
+    .descrição__texto {
+        margin-right: 10%;
+    }
+}
